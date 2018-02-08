@@ -127,10 +127,18 @@
 
 ## 6.接下来请开始调试接口数据。
 
+# 特性说明
+## 1.修改升级包路径 Constant.FILE_DIRECTORY
+## 1.勾选
+## 1.每个版本每天提醒
 
-  
+
+# 效果演示
+(https://github.com/xilinch/update/blob/master/record/device-2018-02-08-155624.gif "效果1")
 
 
+
+(https://github.com/xilinch/update/blob/master/record/ezgif-1-3749d6972e.gif "效果2")
 
 
 
