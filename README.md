@@ -135,7 +135,7 @@
 
 # 效果演示
 
-![](https://github.com/xilinch/update/blob/master/record/ezgif-1-75ff377f0a.gif.gif)
+![](https://github.com/xilinch/update/blob/master/record/ezgif-1-75ff377f0a.gif)
 (https://github.com/xilinch/update/blob/master/record/ezgif-1-75ff377f0a.gif "效果1")
 
 
