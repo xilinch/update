@@ -1,1 +1,24 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.xl.updatelib" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xl.updatelib">
+
+    <application>
+
+
+        <!--<activity-->
+            <!--android:name=".UpgradeActivity"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+            <!--android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />-->
+        <!--<activity-->
+            <!--android:name=".UpgradeSilenceActivity"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+            <!--android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />-->
+
+        <!--<service android:name=".service.UpgradeSilenceIntentService" />-->
+        <!--<service android:name=".service.UpgradeIntentService" />-->
+    </application>
+</manifest>
+

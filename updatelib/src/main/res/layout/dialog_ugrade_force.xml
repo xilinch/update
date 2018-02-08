@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="295dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--标题-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/dd_shape_f64e45_content_top_5">
+
+            <TextView
+                android:id="@+id/dialog_upgrade_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:text="发现新版本V2.0"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dd_shape_ffffff_content_bottom_5"
+        android:orientation="vertical">
+        <!--说明内容-->
+        <ScrollView
+            android:paddingTop="24dp"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="24dp"
+            android:layout_height="140dp">
+        <TextView
+            android:id="@+id/dialog_upgrade_tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+
+            android:text="说明\n1.修复了peter的bug1\n2.修复了peter的bug2\n3.修复了peter的bug3"
+            android:textColor="@color/c_gray_333333" />
+        </ScrollView>
+
+        <com.xl.updatelib.view.CustomProgressWithPercentView
+            android:id="@+id/dialog_upgrade_tv_upgrade_cp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+        </com.xl.updatelib.view.CustomProgressWithPercentView>
+    </LinearLayout>
+</LinearLayout>
