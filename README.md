@@ -134,10 +134,12 @@
 
 
 # 效果演示
+
+![](https://github.com/xilinch/update/blob/master/record/device-2018-02-08-155624.gif)
 (https://github.com/xilinch/update/blob/master/record/device-2018-02-08-155624.gif "效果1")
 
 
-
+![](https://github.com/xilinch/update/blob/master/record/ezgif-1-3749d6972e.gif)
 (https://github.com/xilinch/update/blob/master/record/ezgif-1-3749d6972e.gif "效果2")
 
 
