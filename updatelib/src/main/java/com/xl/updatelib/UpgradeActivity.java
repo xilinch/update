@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
+
 import com.xl.updatelib.bean.UpgradeModel;
 import com.xl.updatelib.dialog.BaseUpgradeDailog;
 import com.xl.updatelib.dialog.UpgradeChoiceDialog;
@@ -40,7 +41,7 @@ public class UpgradeActivity extends Activity {
             String action = intent.getAction();
             if (ACTION_UPDATE_PROGRESS.equals(action)) {
                 //更新进度
-                int percent = (int) intent.getLongExtra(ACTION_UPDATE_PROGRESS, 0);
+                int percent = (int) intent.getIntExtra(ACTION_UPDATE_PROGRESS, 0);
                 if(upgradeDialog != null){
                     upgradeDialog.upgradeProcess(percent);
                 }
