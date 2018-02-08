@@ -4,15 +4,15 @@
 - 支持可选升级、强制升级、静默升级；
 - 支持断点续传；
 ### 基本用法
-1.引入lib作为model
-2.在manifest声明权限：
+## 1.引入lib作为model
+## 2.在manifest声明权限：
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-3.在manifest中声明组件
+## 3.在manifest中声明组件
         <!--升级组件注册-->
         <activity
             android:name="com.xl.updatelib.UpgradeActivity"
@@ -29,25 +29,25 @@
         <service android:name="com.xl.updatelib.service.UpgradeIntentService"/>
         <service android:name="com.xl.updatelib.service.UpgradeSilenceIntentService"/>
         <!--升级组件注册 end -->
-4.拷贝类UtilCheckUpgrade到主项目中
-5.在需要调用升级的activity中 生命周期方法执行
+## 4.拷贝类UtilCheckUpgrade到主项目中
+## 5.在需要调用升级的activity中 生命周期方法执行
    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //执行升级请求
-        **UtilCheckUpgrade.checkUpgradeV2(this, url);**
+        UtilCheckUpgrade.checkUpgradeV2(this, url);
         //注册广播
-        **initUpgradeSilenceReciver();**
+        initUpgradeSilenceReciver();
 
     }
     
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        **dismissUpgradeChoiceSilenceDialog();**
-        **unregisterReceiver(myBroadcastReciver);**
+        dismissUpgradeChoiceSilenceDialog();
+        unregisterReceiver(myBroadcastReciver);
     }
     
     
@@ -125,7 +125,7 @@
     };
     -----end
 
-6.接下来请开始调试接口数据。
+## 6.接下来请开始调试接口数据。
 
 
   
