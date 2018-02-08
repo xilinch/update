@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <application android:allowBackup="true" android:icon="@mipmap/ic_launcher"
+        android:theme="@android:style/Theme.Light.NoTitleBar"
         android:supportsRtl="true">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -15,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--升级注册-->
+        <!--升级组件注册-->
         <activity
             android:name="com.xl.updatelib.UpgradeActivity"
             android:launchMode="singleTask"
@@ -30,6 +31,7 @@
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
         <service android:name="com.xl.updatelib.service.UpgradeIntentService"/>
         <service android:name="com.xl.updatelib.service.UpgradeSilenceIntentService"/>
+        <!--升级组件注册 end -->
     </application>
 
 </manifest>

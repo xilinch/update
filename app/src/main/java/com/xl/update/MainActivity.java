@@ -33,6 +33,7 @@ public class MainActivity extends Activity {
 
     }
 
+    //------升级
     private void checkUpgrade(){
         //检查升级
         String url = "http://testapi.nfapp.southcn.com/nfplus-app-api/check/version/update";
@@ -109,6 +110,8 @@ public class MainActivity extends Activity {
 
         }
     };
+
+    //-----升级end
 
     @Override
     protected void onDestroy() {
