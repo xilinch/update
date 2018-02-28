@@ -129,14 +129,14 @@
 
 # 特性说明
 ## 1.修改升级包路径 Constant.FILE_DIRECTORY
-## 1.勾选
-## 1.每个版本每天提醒
+## 2.勾选不再提示或者点关闭按钮，该版本该天不再提示升级
+
 
 
 # 效果演示
 
-![](https://github.com/xilinch/update/blob/master/record/device-2018-02-08-155624.gif)
-(https://github.com/xilinch/update/blob/master/record/device-2018-02-08-155624.gif "效果1")
+![](https://github.com/xilinch/update/blob/master/record/ezgif-1-75ff377f0a.gif)
+(https://github.com/xilinch/update/blob/master/record/ezgif-1-75ff377f0a.gif "效果1")
 
 
 ![](https://github.com/xilinch/update/blob/master/record/ezgif-1-3749d6972e.gif)
