@@ -1,8 +1,14 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 24
     buildToolsVersion "25.0.0"
+
+    lintOptions {
+        abortOnError false
+    }
 
     defaultConfig {
         minSdkVersion 17
@@ -32,3 +38,12 @@ dependencies {
     compile 'com.squareup.okio:okio:1.6.0'
     compile 'com.android.support:support-v4:26.0.0-alpha1'
 }
+//---------------------------bintray---------------
+publish {
+    userOrg = 'xilinchen1'      // bintray注册的用户名
+    groupId = 'com.xl.updatelib'
+    artifactId = 'updateLib'// bintray创建的package
+    publishVersion = '1.0.0'
+    version = '1.0.0'
+}
+

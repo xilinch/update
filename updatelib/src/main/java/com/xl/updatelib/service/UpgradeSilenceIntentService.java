@@ -75,7 +75,7 @@ public class UpgradeSilenceIntentService extends IntentService {
         }
 
         filePath = Environment.getExternalStorageDirectory().getAbsolutePath().concat(Constant.FILE_DIRECTORY + fileName);
-        Log.i("my", "filePath：" + filePath + "  url:" + url);
+//        Log.i("my", "filePath：" + filePath + "  url:" + url);
 
         download(filePath, url, new OnDownloadListener() {
             @Override

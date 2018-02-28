@@ -149,7 +149,6 @@ public class Main23Activity extends Activity {
                 }
             } else if (UpgradeSilenceActivity.ACTION_UPDATE_SILENCE_START.equals(action)) {
                 Object object = intent.getSerializableExtra(UpgradeModel.TAG);
-                Log.e("my","object:" + object);
                 if (object != null) {
                     UpgradeModel upgradeModel = (UpgradeModel) object;
                     upgradeBySilence(upgradeModel);

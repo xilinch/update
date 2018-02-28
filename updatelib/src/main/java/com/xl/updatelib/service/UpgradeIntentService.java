@@ -87,12 +87,11 @@ public class UpgradeIntentService extends IntentService {
         }
 
         filePath = Environment.getExternalStorageDirectory().getAbsolutePath().concat(Constant.FILE_DIRECTORY + fileName);
-        Log.i("my", "filePath..." + filePath);
+//        Log.i("my", "filePath..." + filePath);
 
         download(filePath, url, new OnDownloadListener() {
             @Override
             public void onDownloadSuccess() {
-                Log.i("my", "onDownloadSuccess...");
                 isDownloading = false;
                 Log.i(TAG, "begainDownload-- Override:" + isDownloading);
                 boolean isRight = UtilZipCheck.isErrorZip(filePath);
@@ -121,7 +120,6 @@ public class UpgradeIntentService extends IntentService {
 
             @Override
             public void onDownloading(int percent) {
-                Log.i("my", "percent..." + percent);
                 if (builder != null) {
                     builder.setProgress(100, (int) percent, false);
                     builder.setContentText("下载进度" + percent + "%");
@@ -139,7 +137,6 @@ public class UpgradeIntentService extends IntentService {
 
             @Override
             public void onDownloadFailed() {
-                Log.i("my", "onDownloadFailed...");
                 if (builder != null) {
                     builder.setContentText("下载失败");
                     notification = builder.build();
@@ -192,10 +189,10 @@ public class UpgradeIntentService extends IntentService {
 
         final File file = new File(fileName);
         int index = fileName.lastIndexOf("/");
-        Log.e("my", "fileName:" + fileName + "  index:" + index);
+//        Log.e("my", "fileName:" + fileName + "  index:" + index);
         if (index > 0 && index < fileName.length()) {
             String fileDirectory = fileName.substring(0, index);
-            Log.e("my", "fileDirectory:" + fileDirectory);
+//            Log.e("my", "fileDirectory:" + fileDirectory);
             File saveFileDirectory = new File(fileDirectory);
             if (!saveFileDirectory.exists()) {
                 saveFileDirectory.mkdirs();
@@ -205,7 +202,7 @@ public class UpgradeIntentService extends IntentService {
         if (!file.exists()) {
             try {
                 boolean success = file.createNewFile();
-                Log.e("my", "success:" + success);
+//                Log.e("my", "success:" + success);
             } catch (Exception var9) {
                 var9.printStackTrace();
             }
@@ -216,7 +213,7 @@ public class UpgradeIntentService extends IntentService {
             fileSize = file.length();
         }
 
-        Log.e("my", "fileSize:" + fileSize);
+//        Log.e("my", "fileSize:" + fileSize);
         Request request = (new Request.Builder()).url(url).addHeader("RANGE", "bytes=" + fileSize + "-").build();
         okHttpClient.newCall(request).enqueue(new Callback() {
             public void onFailure(Request request, IOException e) {
@@ -231,7 +228,7 @@ public class UpgradeIntentService extends IntentService {
                 try {
                     is = response.body().byteStream();
                     long total = response.body().contentLength();
-                    Log.e("my", "response:" + response.toString() + "   total:" + total);
+//                    Log.e("my", "response:" + response.toString() + "   total:" + total);
                     if (total != 0L) {
                         if (206 == response.code()) {
                             fos = new FileOutputStream(file, true);
@@ -244,7 +241,7 @@ public class UpgradeIntentService extends IntentService {
 
                         long sum = 0L;
                         int offset = (int) file.length();
-                        Log.e("my", "offset:" + offset);
+//                        Log.e("my", "offset:" + offset);
                         long currentTime = System.currentTimeMillis();
 
                         int len;
