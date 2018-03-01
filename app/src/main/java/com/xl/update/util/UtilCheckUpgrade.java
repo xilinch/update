@@ -74,6 +74,7 @@ public class UtilCheckUpgrade {
                                     boolean force = data.optBoolean("force");
                                     String updateLog = data.optString("updateLog");
                                     String downloadUrl = data.optString("downloadUrl");
+                                    downloadUrl = "http://wxz.myapp.com/16891/07360129022C5F0B05E381A36ECC66F4.apk?fsname=com.nfdaily.nfplus_4.0.0_4000.apk";
 
                                     UpgradeModel upgradeModel = new UpgradeModel();
                                     upgradeModel.setContent(updateLog);

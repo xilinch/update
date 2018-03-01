@@ -26,4 +26,6 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':updatelib')
+    //或者直接使用
+//    compile 'com.xl.updatelib:updateLib:1.0.0'
 }
