@@ -132,7 +132,7 @@ dependencies {
 
 # 特性说明
 ## 1.修改升级包路径 Constant.FILE_DIRECTORY，默认存放路径为SD卡，/upgrade/apk/，
-    可以使用方法调整  UpdateManager.setAPKSaveDirectry("/test/apk/");
+    可以使用方法调整  UpdateManager.setAPKSaveDirectry("/test/apk/");此方法要在1.0.1上使用
 ## 2.勾选不再提示或者点关闭按钮，该版本该天不再提示升级
 
 
