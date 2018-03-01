@@ -4,7 +4,10 @@
 - 支持可选升级、强制升级、静默升级；
 - 支持断点续传；
 ### 基本用法
-## 1.引入lib作为model
+## 1.引入lib作为model,或者在项目的依赖中加入 
+dependencies {
+   compile 'com.xl.updatelib:updateLib:1.0.0'
+}
 ## 2.在manifest声明权限：
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -128,7 +131,8 @@
 ## 6.接下来请开始调试接口数据。
 
 # 特性说明
-## 1.修改升级包路径 Constant.FILE_DIRECTORY
+## 1.修改升级包路径 Constant.FILE_DIRECTORY，默认存放路径为SD卡，/upgrade/apk/，
+    可以使用方法调整  UpdateManager.setAPKSaveDirectry("/test/apk/");
 ## 2.勾选不再提示或者点关闭按钮，该版本该天不再提示升级
 
 
