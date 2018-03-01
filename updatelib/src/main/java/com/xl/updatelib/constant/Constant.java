@@ -6,5 +6,5 @@ package com.xl.updatelib.constant;
 
 public class Constant {
 
-    public static final String FILE_DIRECTORY = "/upgrade/apk/";
+    public static String FILE_DIRECTORY = "/upgrade/apk/";
 }

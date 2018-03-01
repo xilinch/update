@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.xl.update.util.UtilCheckUpgrade;
+import com.xl.updatelib.UpdateManager;
 import com.xl.updatelib.UpgradeSilenceActivity;
 import com.xl.updatelib.bean.UpgradeModel;
 import com.xl.updatelib.dialog.UpgradeChoiceSilenceDialog;
@@ -25,6 +26,7 @@ public class MainActivity extends Activity {
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                UpdateManager.setAPKSaveDirectry("/test/apk/");
                 checkUpgrade();
             }
         });
